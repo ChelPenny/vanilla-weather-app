@@ -9,25 +9,29 @@
     <title>Weather app</title>
   </head>
   <div class="container">
-    <div class="weather-app">
-      <body>
-        <h1>Taunton</h1>
-        <div class="row">
-          <div class="col-6">
-            <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="partly-cloudy" />
-            12&deg; C | &deg;F
+    <div class="weather-app-wrapper">
+      <div class="weather-app">
+        <body>
+          <h1>Taunton</h1>
+          <div class="row">
+            <div class="col-6">
+              <div class="d-flex weather-temperature">
+                <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="partly-cloudy" />
+                <strong>12</strong><span class="units">&deg;C | <a href="#">&deg;F</a></span>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Percipitation: 13%</li>
+                <li>Humidity: 76%</li>
+                <li>Wind: 12mph</li>
+              </ul>
+            </div>
           </div>
-          <div class="col-6">
-            <ul>
-              <li>Percipitation: 13%</li>
-              <li>Humidity: 76%</li>
-              <li>Wind: 12mph</li>
-            </ul>
-          </div>
-          <small><a class="coded-by" href="https://github.com/ChelPenny/vanilla-weather-app" target="_blank">Open-source code</a> by Cheryl Penny</small>
-        </div>
-        <script src="src/app.js"></script>
-      </body>
+          <script src="src/app.js"></script>
+        </body>
+      </div>
+      <small><a class="coded-by" href="https://github.com/ChelPenny/vanilla-weather-app" target="_blank">Open-source code</a> by Cheryl Penny</small>
     </div>
   </div>
 </html>
