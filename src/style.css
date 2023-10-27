@@ -7,7 +7,7 @@ h1 {
   color: #5a6275;
   font-weight: 100;
   line-height: 28px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 ul {
@@ -21,6 +21,15 @@ li {
   font-size: 12px;
   font-weight: 100;
   line-height: 16px;
+}
+
+li::first-letter {
+  text-transform: capitalize;
+}
+
+small {
+  color: #acb2c2;
+  font-size: 8px;
 }
 
 .weather-app {
@@ -50,4 +59,13 @@ li {
   top: 3px;
   color: #5a6275;
   font-size: 12px;
+}
+
+.description {
+  color: #5a6275;
+  font-size: 12px;
+}
+
+#fahrenheit {
+  text-decoration: none;
 }
