@@ -15,8 +15,20 @@ function showTemperature(response) {
   windElement.innerHTML = Math.round(response.data.wind.speed);
 }
 
-let apiKey = "8d9838178b5b401f1b4e7cb5af18e210";
-let city = "Taunton";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+function search(city) {
+  let apiKey = "8d9838178b5b401f1b4e7cb5af18e210";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
-axios.get(apiUrl).then(showTemperature);
+  axios.get(apiUrl).then(showTemperature);
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+
+search("England");
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
