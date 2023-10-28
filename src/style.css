@@ -61,11 +61,20 @@ small {
   font-size: 12px;
 }
 
+.weather-temperature .active {
+  color: #5a6275;
+  cursor: default;
+}
+
 .description {
   color: #5a6275;
   font-size: 12px;
 }
 
-#fahrenheit {
+#celsius-link {
+  text-decoration: none;
+}
+
+#fahrenheit-link {
   text-decoration: none;
 }
