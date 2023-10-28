@@ -8,21 +8,20 @@
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather app</title>
   </head>
-  <div class="container">
-    <div class="weather-app-wrapper">
-      <div class="weather-app">
-        <form id="search-form" class="mb-3">
-          <div class="row">
-            <div class="col-9">
-              <input type="search" id="city-input" placeholder="Enter a city..." class="form-control" autocomplete="off" />
+  <body>
+    <div class="container">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input type="search" id="city-input" placeholder="Enter a city..." class="form-control" autocomplete="off" />
+              </div>
+              <div class="col-3">
+                <input type="submit" value="Search" class="btn btn-primary w-100" />
+              </div>
             </div>
-            <div class="col-3">
-              <input type="submit" value="Search" class="btn btn-primary w-100" />
-            </div>
-          </div>
-        </form>
-
-        <body>
+          </form>
           <h1 id="city"></h1>
           <ul>
             <li id="description"></li>
@@ -41,11 +40,23 @@
                 <li>Wind: <span id="wind"></span>mph</li>
               </ul>
             </div>
+            <div class="weather-forecast">
+              <div class="row">
+                <div class="col-2">
+                  <div class="weather-forecast-day">Sun</div>
+                  <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="" width="48" />
+                  <div class="weather-forecast-temperatures">
+                    <span class="weather-forecast-temperature-maximum">18&deg;</span>
+                    <span class="weather-forecast-temperature-minimum">12&deg;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <script src="src/app.js"></script>
-        </body>
+        </div>
+        <small><a class="coded-by" href="https://github.com/ChelPenny/vanilla-weather-app" target="_blank">Open-source code</a> by Cheryl Penny</small>
       </div>
-      <small><a class="coded-by" href="https://github.com/ChelPenny/vanilla-weather-app" target="_blank">Open-source code</a> by Cheryl Penny</small>
     </div>
-  </div>
+  </body>
 </html>

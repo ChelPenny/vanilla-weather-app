@@ -71,6 +71,25 @@ small {
   font-size: 12px;
 }
 
+.weather-forecast {
+  margin-top: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+  color: #8a93a5;
+}
+.weather-forecast-day {
+  font-size: 12px;
+}
+
+.weather-forecast-temperatures {
+  font-size: 10px;
+}
+
+.weather-forecast-temperature-minimum {
+  opacity: 0.8;
+}
+
 #celsius-link {
   text-decoration: none;
 }
